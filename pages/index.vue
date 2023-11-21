@@ -1,6 +1,5 @@
 <template>
     <div style="padding-top: 15px; padding-left: 50px; padding-right: 50px; width: 100%; display: flex; flex-direction: column; align-items: center;">
-        <VSonner></VSonner>
         <span style="font-weight: bold;">Please provide your PO # for the Invoice</span>
         <v-text-field ref="workspace" :rules="[rules.required]" style="width: 100%; margin-top:15px;" label="Workspace name" variant="outlined" v-model="invoiceDetails.workspaceName"></v-text-field>
         <v-text-field :disabled="true" v-model="invoiceDetails.subscriptionPlan" style="width: 100%;" label="Subscription Plan" variant="outlined"></v-text-field>
